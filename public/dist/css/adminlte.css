@@ -15545,9 +15545,10 @@ body.text-sm .control-sidebar {
 }
 
 .navbar-dark {
-  background-color: #343a40;
+  background-color:  #212741; 
   border-color: #4b545c;
 }
+
 
 .navbar-primary {
   background-color: #007bff;
@@ -18038,6 +18039,10 @@ body.text-sm .control-sidebar {
 .navbar-white {
   background-color: #fff;
   color: #1f2d3d;
+}
+.navbar-dash {
+  background-color: #fff;
+  color: #212741;
 }
 
 .navbar-white.navbar-light .form-control-navbar::-webkit-input-placeholder {

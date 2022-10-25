@@ -22,8 +22,8 @@
                 <table class="table table-striped table-valign-middle">
                   <thead>
                   <tr>
-                  <th>Id</th>
-                    <th>Id Firebase</th>
+                  
+                    
                     <th>Id Serre</th>
                     
                     <th>culture Actuelle</th>
@@ -32,53 +32,50 @@
                     <th>temperature</th>
                     <th>Ph</th>
                     <th>CO2</th>
-                    <th>Etat du Ventilateur</th>
-                    <th>Etat de la fenetre</th>
+                    <th>Niveau d'eau</th>
+                    
                   </tr>
                   </thead>
                   <tbody>
+                  @foreach($datas as $data1)
                         <tr>
-                                    <td>1</td>
-                        
-                                    <td>
+                        @foreach($data1 as $data)
                                     
-                                    ID 131233
-                                    </td>
-                                    <td> ID 131233
+                                    <td>  {{ $data['id'] }}
 
                                     </td>
                                     
                                     <td>
-                                      Tomates
+                                    {{$data["kultSerre"] }}
                                     </td>
                                     
                                     <td>
-                                    20
+                                    
+                                    {{$data["dataSerre"]["sol"] }}
                                     </td>
                                     <td>
-                                    20
+                                    {{$data["dataSerre"]["hm"] }}
                                     </td>
                                     <td>
-                                      30 °
+                                    {{$data["dataSerre"]["tmp"] }} °
                                     </td>
                                     <td>
-                                      7
+                                    {{$data["dataSerre"]["ph"] }} 
+                                    </td>
+                                    <td>
+                                    {{$data["dataSerre"]["co2"] }}
+                                  
                                     </td>
                                     <td>
                                     
-                                    30 
+                                    {{$data["dataSerre"]["niv"] }}
                                     </td>
-                                    <td>
+
+                                    @endforeach   
                                     
-                                    ON
-                                    </td>
-                                    <td>
-                                    
-                                    ON
-                                    </td>
                         </tr>
                         
-                        
+                      @endforeach    
                         
                   </tbody>
                 </table>

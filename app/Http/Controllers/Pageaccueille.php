@@ -32,16 +32,19 @@ class Pageaccueille extends Controller
     public function authentification(Request $request)
     {
         
+        
         $auth = app('firebase.auth');
+        
          
         $email= $request['email'];
         $clearTextPassword= $request['password'];
 
         if($request['role']=="utilisateur"){
             try {
-                $auth->signInWithEmailAndPassword($email, $clearTextPassword);
-               
+                $resulatat=$auth->signInWithEmailAndPassword($email, $clearTextPassword);
+                $firebaseId=$resulatat->firebaseUserId();
                Session::put('user_email', $email);
+               Session::put('firebaseId', $firebaseId);
                
                return redirect('/dashboard');
            } catch (\Kreait\Firebase\Exception\Auth\InvalidPassword | \Kreait\Firebase\Exception\InvalidArgumentException | \Kreait\Firebase\Auth\SignIn\FailedToSignIn $e) {
@@ -50,11 +53,11 @@ class Pageaccueille extends Controller
                return redirect('/')->withErrors(['msg' => $message]);
            }
        }
-       else if($request['role']=="administrateur"){
+       else if($request['role']=="administateur"){
         try { 
-            $auth->signInWithEmailAndPassword($email, $clearTextPassword);
-           
-           Session::put('user_email', $email);
+            //$auth->signInWithEmailAndPassword($email, $clearTextPassword);
+            
+          //Session::put('user_email', $email);
            
            return redirect('/dashboardadmin');
        } catch (\Kreait\Firebase\Exception\Auth\InvalidPassword | \Kreait\Firebase\Exception\InvalidArgumentException | \Kreait\Firebase\Auth\SignIn\FailedToSignIn $e) {
@@ -86,14 +89,15 @@ class Pageaccueille extends Controller
                 "Email"=> $request['email'],
                 "Nom"=> $request['nom'],
                 "Lieu"=> $request['lieu'],
-                "Taille"=> $request['taille'],
+                "Taille"=> $request['Taille'],
             ]);
+          
             return redirect('/#commande')->with('success', 'Votre commande a été effectuée');
            
        } catch (FirebaseException $e) {
            $message = $e->getMessage();
           
-           return redirect('/#commande')->wwith('erreur', $message);
+           return redirect('/#commande')->with('erreur', $message);
        }
        
     }

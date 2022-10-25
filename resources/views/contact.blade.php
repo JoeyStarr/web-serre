@@ -104,7 +104,7 @@ https://templatemo.com/tm-574-mexant
                 <a href="#">22-22-20-20-10</a>
               </div>
             </div>
-            <div class="col-lg-4">
+resources/views/welcome.blade.php            <div class="col-lg-4">
               <div class="info-item">
                 <i class="fa fa-map-marked-alt"></i>
                 <h4>Addresse</h4>

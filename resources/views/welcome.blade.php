@@ -44,7 +44,7 @@ https://templatemo.com/tm-574-mexant
               <nav class="main-nav">
                   <!-- ***** Logo Start ***** -->
                   <a href="index.html" class="logo">
-                      <img src="assets/images/serreson.png"  height="100" alt="" >
+                      <img src="assets/images/serreson.png"   height="100"  alt="" >
                   </a>
                   <!-- ***** Logo End ***** -->
                   <!-- ***** Menu Start ***** -->
@@ -376,7 +376,7 @@ Elle sera alimentée par des panneaux solaires.
 
         </p>
         <div class="green-button">
-          <a href="about-us.html">Discover More</a>
+          <a href="/contact">Nous contacter</a>
         </div>
       </div>
     </div>
@@ -435,9 +435,9 @@ Elle sera alimentée par des panneaux solaires.
           <div class="col-lg-12">
             <fieldset>
               <label for="chooseOption" class="form-label">Taille de votre serre</label>
-              <select name="Category" class="form-select" aria-label="Default select example" id="chooseOption" onchange="this.form.click()">
+              <select name="Taille" class="form-select" aria-label="Default select example" id="chooseOption" onchange="this.form.click()">
                   <option selected>Choisissez vos tailles</option>
-                  <option type="checkbox" name="1,20 x 1,20 m" value="Online Banking">1,20 x 1,20 m</option>
+                  <option type="checkbox" name="1,20 x 1,20 m" value="1,20 x 1,20">1,20 x 1,20 m</option>
                   <option value="2,40 x 4,40 m">2,40 x 4,40 m</option>
                   <option value="6,20 x 6,20 m">6,20 x 6,20 m</option>
                   <option value="10,20 x 10,20 m">10,20 x 10,20 m</option>

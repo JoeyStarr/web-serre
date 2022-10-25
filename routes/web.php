@@ -28,7 +28,13 @@ Route::get('/dashboard', [dashboardController::class, 'index']);
 Route::get('/dashboardadmin', [dashboardController::class, 'indexadmin']); 
 
 Route::post('/commande', [Pageaccueille::class, 'commande'])->name('commande');
+Route::post('/serre', [dashboardController::class, 'creerserre'])->name('serre');
 Route::post('/MesMessage', [Pageaccueille::class, 'MesMessage'])->name('contact');
+Route::post('modifReglage', [AdminSerre::class, 'modifReglage'])->name('modifReglage');
 
 Route::get('/reglage', [AdminSerre::class, 'pagereglage']); 
 Route::get('/commande', [AdminSerre::class, 'pagecommande']); 
+Route::get('/commandeadmin', [dashboardController::class, 'serreadmin']);  
+Route::get('/listeCommande', [dashboardController::class, 'listecommande']); 
+
+

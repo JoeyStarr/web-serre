@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>SERRESON ESPACE ADMIN </title>
   <link rel="shortcut icon" href="/serreson.ico" type="image/x-icon">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -23,7 +23,7 @@
 <body class="sidebar-mini">
 <div class="wrapper">
  
-  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+  <nav class="main-header navbar navbar-expand navbar-dark"> 
    
     <ul class="navbar-nav">
       <li class="nav-item">
@@ -93,7 +93,7 @@
     </ul>
   </nav>
  
-  <aside class="main-sidebar sidebar-light-primary elevation-4" >
+  <aside class="main-sidebar sidebar-dark-primary elevation-4" >
     
     <a href="#" class="brand-link">
       <img src="assets/images/serreson.png" class="brand-image img-circle elevation-3" style="opacity: .8">
@@ -124,17 +124,7 @@
                 
               </p>
             </a>
-          </li>
-         
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-            <i class="fa fa-bar-chart" aria-hidden="true" style="color:green"></i>
-              <p>
-              Statisques
-                
-              </p>
-            </a>
-          </li>
+          </li> 
           <li class="nav-item">
             <a href="/reglage" class="nav-link">
             <i class="fa fa-cog" aria-hidden="true"style="color:green" ></i>
