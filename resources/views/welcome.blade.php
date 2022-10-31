@@ -122,7 +122,7 @@ https://templatemo.com/tm-574-mexant
 <div class="swiper-container" id="top">
 <div class="swiper-wrapper">
   <div class="swiper-slide">
-    <div class="slide-inner" style="background-image:url(assets/images/serre3.jpeg)">
+    <div class="slide-inner" style="background-image:url(assets/images/couverture5.jpg)">
       <div class="container">
         <div class="row">
           <div class="col-lg-8">
@@ -135,7 +135,7 @@ https://templatemo.com/tm-574-mexant
                   <a href="#commande">Commandez votre serre</a>
                 </div>
                 <div class="orange-button">
-                  <a href="#">Voir plus</a>
+                  <a href="#information">Voir plus</a>
                 </div>
               </div>
             </div>
@@ -145,7 +145,7 @@ https://templatemo.com/tm-574-mexant
     </div>
   </div>
   <div class="swiper-slide">
-    <div class="slide-inner" style="background-image:url(assets/images/serre12.jpg)"> 
+    <div class="slide-inner" style="background-image:url(assets/images/couverture.jpg)"> 
       <div class="container">
         <div class="row">
           <div class="col-lg-8">
@@ -168,7 +168,7 @@ https://templatemo.com/tm-574-mexant
     </div>
   </div>
   <div class="swiper-slide">
-    <div class="slide-inner" style="background-image:url(assets/images/serre6.jpg)"> 
+    <div class="slide-inner" style="background-image:url(assets/images/couverture4.jpg)"> 
       <div class="container">
         <div class="row">
           <div class="col-lg-8">
@@ -366,7 +366,7 @@ https://templatemo.com/tm-574-mexant
         </div>
       </div>
     </div>
-    <div class="col-lg-4">
+    <div class="col-lg-4" id="information">
       <div class="right-content">
         <h4>Description</h4>
         <p>
@@ -509,7 +509,7 @@ Elle sera alimentée par des panneaux solaires.
     </div>
     <div class="col-lg-2 col-sm-4 col-6">
       <div class="item">
-        <img src="assets/images/orange.png" alt="">
+        <img src="assets/images/orange.png" height="110" alt="">
         
       </div>
       
